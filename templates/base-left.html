@@ -1,0 +1,47 @@
+{% extends "head-footer.html" %}
+{% load staticfiles %}
+
+{% block middle %}
+
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <li class="header"></li>
+                <li class="treeview">
+                    <a href="/adm/asset/"><i class="fa fa-desktop"></i> <span>设备清单</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>资产管理</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-plus-square-o"></i>添加设备</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        {% block content %}
+
+
+        {% endblock %}
+
+    </div>
+    <!-- /.content-wrapper -->
+
+{% endblock %}

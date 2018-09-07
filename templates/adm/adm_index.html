@@ -1,0 +1,31 @@
+{% extends "base-left.html" %}
+{% load staticfiles %}
+
+{% block title %}SandBox{% endblock %}
+
+{% block content %}
+
+
+    <section class="content-header">
+      <h1>
+        固定资产管理
+      </h1>
+    </section>
+
+    <div class="pad margin no-print">
+      <div class="callout callout-info" style="margin-bottom: 0!important;">
+        <h4><i class="fa  fa-info-circle"></i> 提示信息:</h4>
+        本模块包含：固定资产管理功能模块
+      </div>
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript">
+	$(function() {
+		$('#index').addClass('active');
+	});
+  </script>
+{% endblock %}
